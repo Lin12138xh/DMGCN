@@ -133,8 +133,8 @@ class GraphReader(Dataset):
             nfeat = []
             # atom type HCNOF
             # nfeat += [int(node==x) for x in range(11)]
-            nfeat += [node]
-            # nfeat += [0]
+            # nfeat += [node]
+            nfeat += [0]
             # nfeat += [float(atom_prop[node][4])]
             nfeat += [int(ndata['atom_type'] == x) for x in ['H', 'C', 'N', 'O', 'F']]
             colors += [color[ndata['atom_type']]]
